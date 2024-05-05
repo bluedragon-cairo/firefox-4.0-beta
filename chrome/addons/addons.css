@@ -1,0 +1,75 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* sage */
+#pageSagePanel toolbar {
+  border-right-width: 0 !important;
+  border-left-width: 0 !important;
+}
+
+/* Stylish */
+#stylish #findbar,
+#stylem-edit #findbar {
+  border-right-width: 0 !important;
+  border-bottom-width: 0 !important;
+  border-left-width: 0 !important;
+}
+
+/* Ez Sidebar */
+#ezsidebar-window > #sidebar-box {
+  border-inline-end: 1px solid rgb(137, 152, 170);
+}
+
+/* Google Toolbar */
+.gtb-search-box {
+  margin: 0 !important;
+  border-top: 1px solid !important;
+  border-right-width: 0 !important;
+  border-left: 1px solid !important;
+  border-bottom: 1px solid !important;
+  -moz-border-top-colors: rgb(0, 0, 0) !important;
+  -moz-border-bottom-colors: rgb(0, 0, 0) !important;
+  -moz-border-left-colors: rgb(0, 0, 0) !important;
+}
+
+/* Firebug */
+.toolbarbutton-menu-dropmarker {
+  margin-inline-start: 0 !important;
+}
+
+/* ::::: MR Tech Toolkit ::::: */
+
+#addons-sort-button {
+  margin-inline-end: 4px;
+}
+
+#addons-sort-button > .button-box > .button-icon {
+  margin-inline-start: 0;
+}
+
+#addons-sort-button > .button-box > .button-text {
+	display: none;
+}
+
+/* ::::: Tree Style Tab ::::: */
+
+.tabbrowser-tabs[treestyletab-mode="vertical"] {
+  border-bottom-width: 0;
+}
+
+.tabbrowser-tabs[treestyletab-mode="vertical"] .tabs-bottom {
+	display: none;
+}
+
+.tabbrowser-tabs[treestyletab-mode="vertical"] .tabs-container,
+.tabbrowser-tabs[treestyletab-mode="vertical"] .tabbrowser-arrowscrollbox > scrollbox {
+  -moz-box-align: stretch !important;
+}
+
+.tabbrowser-tabs[treestyletab-mode="vertical"] tabbox .tabs-newtab-button,
+.tabbrowser-tabs[treestyletab-mode="vertical"] tabbox .tabs-alltabs-button {
+  height: 18px !important;
+}
+
+.tabbrowser-tabs[treestyletab-mode=vertical] .tabbrowser-tab > * > * > .tab-close-button {
+  padding: 0 !important;
+}

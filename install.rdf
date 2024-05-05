@@ -9,9 +9,9 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>firefox40b1@ff4-pm</em:id>
-    <em:version>4.0.9</em:version>
+    <em:version>4.0.10</em:version>
     <em:name>Firefox 4.0 Beta</em:name>
-    <em:description>Firefox 4.0 Beta 3 default theme ported to Pale Moon! The CSS codes and other stuff are created by Mozilla Foundation.</em:description>
+    <em:description>Firefox 4.0 Beta 3 default theme ported to Pale Moon. The CSS codes and other stuff are created by Mozilla Foundation.</em:description>
     <em:creator>길고(달빛)</em:creator>
     <em:type>4</em:type>
     <em:internalName>firefox4b</em:internalName>

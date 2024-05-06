@@ -5,6 +5,5 @@ skin 	os 	firefox4b chrome/os/linux/
 skin 	os 	firefox4b chrome/os/winnt/ os=WINNT
 skin 	os 	firefox4b chrome/os/darwin/ os=Darwin
 
-override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
 override chrome://devtools/skin/floating-scrollbars-dark-theme.css chrome://global/skin/devtools/floating-scrollbars.css
 override chrome://devtools/skin/floating-scrollbars-responsive-design.css chrome://global/skin/devtools/floating-scrollbars-light.css

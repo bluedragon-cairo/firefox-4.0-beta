@@ -106,6 +106,10 @@
 	#navigator-toolbox > toolbar:not(:-moz-lwtheme) {
 		background-color: rgb(227, 237, 246);
 	}
+	
+	#navigator-toolbox > #PersonalToolbar, #navigator-toolbox > #PersonalToolbar ~ toolbar {
+		-moz-appearance: -moz-win-exclude-glass !important;
+	}
 }
 
 #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar)[iconsize="small"],
@@ -2805,6 +2809,17 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #status-bar > statusbarpanel {
   border-width: 0;
   -moz-appearance: none !important;
+}
+
+#browser {
+	-moz-appearance: -moz-win-exclude-glass !important;
+	border-width: 0 !important;
+}
+
+#main-window[sizemode="normal"] #browser-bottombox {
+	-moz-appearance: -moz-win-exclude-glass !important;
+    border: 0px solid rgba(10%,10%,10%,.4);
+    border-top-style: none;
 }
 
 #browser-bottombox > toolbar#addon-bar {

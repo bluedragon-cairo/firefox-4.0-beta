@@ -3416,3 +3416,25 @@ toolbarbutton, .toolbarbutton-1 {
 #urlbar-stop-button:hover {
   background-image: -moz-linear-gradient(rgb(244,156,128), rgb(215,101,77) 49%, rgb(194,66,48) 51%, rgb(170,41,23));
 }
+
+@media (-moz-windows-compositor) {
+	#navigator-toolbox:not([tabsontop="true"]) toolbar:not(#PersonalToolbar):not(#TabsToolbar) {
+		background: transparent !important;
+	}
+	
+	#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
+		background-color: rgb(227, 237, 246) !important;
+	}
+}
+
+#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
+  background-color: -moz-Dialog;
+}
+
+@media (-moz-os-version: windows-vista), 
+       (-moz-os-version: windows-win7), 
+       (-moz-os-version: windows-win8) and (-moz-windows-default-theme) {
+	#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
+		background-color: rgb(227, 237, 246);
+	}
+}

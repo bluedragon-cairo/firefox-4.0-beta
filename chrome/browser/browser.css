@@ -3423,18 +3423,19 @@ toolbarbutton, .toolbarbutton-1 {
 	}
 	
 	#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
-		background-color: rgb(227, 237, 246) !important;
+	  background: -moz-Dialog !important;
+	  -moz-appearance: -moz-win-exclude-glass !important;
 	}
-}
 
-#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
-  background-color: -moz-Dialog;
-}
-
-@media (-moz-os-version: windows-vista), 
-       (-moz-os-version: windows-win7), 
-       (-moz-os-version: windows-win8) and (-moz-windows-default-theme) {
-	#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
-		background-color: rgb(227, 237, 246);
+	@media (-moz-os-version: windows-vista), 
+		   (-moz-os-version: windows-win7), 
+		   (-moz-os-version: windows-win8) and (-moz-windows-default-theme) {
+		#navigator-toolbox:not([tabsontop="true"]) #PersonalToolbar ~ toolbar:not(#TabsToolbar) {
+			background: rgb(227, 237, 246) !important;
+		}
+	}
+	
+	#navigator-toolbox[tabsontop="true"] #PersonalToolbar ~ toolbar:not(#TabsToolbar), #navigator-toolbox[tabsontop="true"] toolbar#linktoolbar {
+		background: rgb(227, 237, 246) !important;
 	}
 }
